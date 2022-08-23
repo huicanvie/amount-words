@@ -1,6 +1,6 @@
 {
   "name": "amount-words",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "大写金额转换",
   "main": "index.js",
   "scripts": {
