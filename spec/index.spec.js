@@ -37,4 +37,12 @@ describe ('Convert test', () => {
   it('123.10 should return 壹佰贰拾叁圆壹角', () => {
     assert.equal(convert(123.10), '壹佰贰拾叁圆壹角')
   })
+
+  it('123.00 add prefix should return 总金额壹佰贰拾叁圆整', () => {
+    assert.equal(convert(123.00, {prefix: '总金额'}), '总金额壹佰贰拾叁圆整')
+  })
+
+  it('123.00 add suffix should return 壹佰贰拾叁圆整金额', () => {
+    assert.equal(convert(123.00, {suffix: '金额'}), '壹佰贰拾叁圆整金额')
+  })
 })

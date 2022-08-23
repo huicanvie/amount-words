@@ -40,7 +40,7 @@ export const convert = (num, options) => {
     if (decimalArr.length < 2){
       decimalArr.push('0')
     }
-   console.log(decimalArr)
+   // console.log(decimalArr)
    const bigInt =  handler(intArr, UNIT.slice(0, UNIT.length - 2))
    const bigDecimal = handler(decimalArr, UNIT.slice(UNIT.length - 2))
    return getRes(bigInt + bigDecimal, options)
@@ -73,7 +73,7 @@ export const handler = (arr, scale, text) => {
        
       j++
     }
-    console.log(bigNumber)
+    // console.log(bigNumber)
     return bigNumber.join('')
   }
   return ''
