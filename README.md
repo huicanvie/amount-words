@@ -11,7 +11,7 @@ const amount =  123;
 
 const big = convert(amount, options)
 
-// 壹佰贰拾三圆整
+// 壹佰贰拾叁圆整
 
 ```
 
