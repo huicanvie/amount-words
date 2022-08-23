@@ -58,4 +58,8 @@ describe ('Convert test', () => {
   it('00.00 should return 零', () => {
     assert.equal(convert('00.00'), '零')
   })
+
+  it('xx should return NaN', () => {
+    assert.equal(convert('xx'), NaN)
+  })
 })

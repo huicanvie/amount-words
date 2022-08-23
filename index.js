@@ -14,6 +14,9 @@ const INTTEXT = '整'
 export const formmatter = num => {
   try {
     num = (new Number(num)).valueOf()
+    if (num === NaN) {
+      return NaN
+    }
     num = num.toString()
     if (num.indexOf('.') > 1) {
        const handler = num => {
@@ -39,6 +42,11 @@ export const formmatter = num => {
 export const convert = (num, options) => {
   options = {...DEFAULT_OPTIONS, ...options}
   num = formmatter(num)
+  
+  if (num === 'NaN') {
+    console.log(num)
+    return NaN
+  }
   const numArr = num.split('');
   let intArr, decimalArr
 
