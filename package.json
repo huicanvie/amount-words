@@ -1,5 +1,5 @@
 {
-  "name": "bigamount",
+  "name": "amount-words",
   "version": "1.0.0",
   "description": "大写金额转换",
   "main": "index.js",
@@ -14,5 +14,9 @@
     "@babel/register": "^7.18.9",
     "babel": "^6.23.0",
     "mocha": "^10.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/huicanvie/bigNumber.git"
   }
 }

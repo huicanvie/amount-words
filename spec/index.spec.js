@@ -22,6 +22,11 @@ describe('Formatter test', () => {
   it ('123.10 should return 123', () => {
     assert.equal(formmatter('123.10'), '123.1')
   })
+
+  it ('0.01 should return 0.01', () => {
+    assert.equal(formmatter('0.01'), '0.01')
+  })
+
 })
 
 describe ('Convert test', () => {
@@ -44,5 +49,13 @@ describe ('Convert test', () => {
 
   it('123.00 add suffix should return 壹佰贰拾叁圆整金额', () => {
     assert.equal(convert(123.00, {suffix: '金额'}), '壹佰贰拾叁圆整金额')
+  })
+
+  it('0.10 should return 壹角', () => {
+    assert.equal(convert(0.10), '壹角')
+  })
+
+  it('00.00 should return 零', () => {
+    assert.equal(convert('00.00'), '零')
   })
 })
