@@ -1,0 +1,18 @@
+{
+  "name": "bigamount",
+  "version": "1.0.0",
+  "description": "大写金额转换",
+  "main": "index.js",
+  "scripts": {
+    "test": "BABEL_ENV=node mocha spec/index.spec.js --require @babel/register --exit"
+  },
+  "author": "huicanvie <81681445@qq.com>",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.18.13",
+    "@babel/preset-env": "^7.18.10",
+    "@babel/register": "^7.18.9",
+    "babel": "^6.23.0",
+    "mocha": "^10.0.0"
+  }
+}
