@@ -2,7 +2,7 @@
 
 ### 使用
 ```
-import {convert} from 'bigAmount'
+import {convert} from 'amount-words'
 
 // 转换参数
 const options = {};
