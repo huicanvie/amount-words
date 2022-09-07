@@ -101,3 +101,12 @@ export const handler = (arr, scale, text) => {
   }
   return ''
 }
+
+// 单个数字转换
+export const singleConvert = number => {
+  const res = BIGNUMBER[number] || number
+  if (!res) {
+    console.error('The number is invalid')
+  }
+  return res
+}

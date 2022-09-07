@@ -1,6 +1,6 @@
 {
   "name": "amount-words",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "大写金额转换",
   "main": "index.js",
   "scripts": {
@@ -18,5 +18,6 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/huicanvie/bigNumber.git"
-  }
+  },
+  "keywords": ["big amuont", "amount words", "大写金额"]
 }

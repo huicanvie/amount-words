@@ -2,7 +2,7 @@
 
 ### 使用
 ```
-import {convert} from 'amount-words'
+import { convert, singleConvert} from 'amount-words'
 
 // 转换参数
 const options = {};
@@ -11,7 +11,12 @@ const amount =  123;
 
 const big = convert(amount, options)
 
-// 壹佰贰拾叁圆整
+// ==> 壹佰贰拾叁圆整
+
+// 单个数字转换
+
+const single = singleConvert(1)
+// ==> '壹'
 
 ```
 

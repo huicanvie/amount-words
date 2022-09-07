@@ -1,4 +1,4 @@
-import {formmatter, convert } from '../index'
+import {formmatter, convert, singleConvert } from '../index'
 var assert = require('assert')
 
 describe('Formatter test', () => {
@@ -62,4 +62,19 @@ describe ('Convert test', () => {
   it('xx should return NaN', () => {
     assert.equal(convert('xx'), NaN)
   })
+})
+
+describe('single convert is ok', () => {
+
+   it('1 should return 壹', () => {
+     assert.equal(singleConvert(1), '壹')
+   })
+
+   it('12 should return undefined', () => {
+    assert.equal(singleConvert(12), 12)
+   })
+
+   it('"" should return undefined', () => {
+    assert.equal(singleConvert(""), "")
+   })
 })
