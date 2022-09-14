@@ -1,6 +1,6 @@
 {
   "name": "amount-words",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "大写金额转换",
   "main": "index.js",
   "scripts": {
@@ -19,5 +19,5 @@
     "type": "git",
     "url": "https://github.com/huicanvie/amount-words.git"
   },
-  "keywords": ["big amuont", "amount words", "大写金额"]
+  "keywords": ["amount", "amount words", "大写金额"]
 }
